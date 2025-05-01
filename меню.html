@@ -2,82 +2,152 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Меню Valve</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        body { font-family: Arial, sans-serif; padding: 20px; background-color: #f5f5f5; }
-        table, th, td { border: 1px solid black; border-collapse: collapse; padding: 10px; }
-        table { width: 100%; margin-top: 20px; background-color: #fff; }
-        h2 { color: #2c3e50; }
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #1f1f1f;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #2c2c2c;
+            padding: 10px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #1e1e1e;
+        }
+        th, td {
+            border: 1px solid #444;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #333;
+        }
+        video, iframe {
+            margin-top: 20px;
+            max-width: 100%;
+        }
+        a {
+            color: #4da6ff;
+        }
     </style>
 </head>
 <body>
+    <div class="header">
+        <h1>Інтерактивне меню Valve</h1>
+    </div>
 
-    <h1>Інтерактивне меню Valve</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="історія валве.html">Історія</a></li>
+        </ul>
+    </nav>
 
-    <h2>Ігри Valve</h2>
-    <ul>
-        <li>Half-Life</li>
-        <li>Counter-Strike</li>
-        <li>Portal</li>
-        <li>Team Fortress</li>
-    </ul>
+    <div class="content">
+        <h2>Ігри Valve</h2>
+        <ul>
+            <li>Half-Life</li>
+            <li>Counter-Strike</li>
+            <li>Portal</li>
+            <li>Team Fortress</li>
+        </ul>
 
-    <h2>Важливі дати</h2>
-    <ol>
-        <li>1996 — Заснування компанії</li>
-        <li>1998 — Випуск Half-Life</li>
-        <li>2003 — Запуск Steam</li>
-        <li>2015 — Source 2</li>
-    </ol>
+        <h2>Важливі дати</h2>
+        <ol>
+            <li>1996 — Заснування компанії</li>
+            <li>1998 — Випуск Half-Life</li>
+            <li>2003 — Запуск Steam</li>
+            <li>2015 — Source 2</li>
+        </ol>
 
-    <h2>Ігри та платформи</h2>
-    <ul>
-        <li>Half-Life
-            <ol>
-                <li>PC</li>
-                <li>PlayStation 2</li>
-            </ol>
-        </li>
-        <li>Portal
-            <ol>
-                <li>PC</li>
-                <li>Xbox</li>
-            </ol>
-        </li>
-    </ul>
+        <h2>Ігри та платформи</h2>
+        <ul>
+            <li>Half-Life
+                <ol>
+                    <li>PC</li>
+                    <li>PlayStation 2</li>
+                </ol>
+            </li>
+            <li>Portal
+                <ol>
+                    <li>PC</li>
+                    <li>Xbox</li>
+                </ol>
+            </li>
+        </ul>
 
-    <h2>Таблиця ігор</h2>
-    <table>
-        <tr>
-            <th rowspan="2">Гра</th>
-            <th colspan="2">Дата випуску</th>
-        </tr>
-        <tr>
-            <td>Рік</td>
-            <td>Платформа</td>
-        </tr>
-        <tr>
-            <td>Half-Life</td>
-            <td>1998</td>
-            <td>PC</td>
-        </tr>
-        <tr>
-            <td>Portal</td>
-            <td>2007</td>
-            <td>PC, Xbox</td>
-        </tr>
-    </table>
+        <h2>Таблиця ігор</h2>
+        <table>
+            <tr>
+                <th rowspan="2">Гра</th>
+                <th colspan="2">Дата випуску</th>
+            </tr>
+            <tr>
+                <td>Рік</td>
+                <td>Платформа</td>
+            </tr>
+            <tr>
+                <td>Half-Life</td>
+                <td>1998</td>
+                <td>PC</td>
+            </tr>
+            <tr>
+                <td>Portal</td>
+                <td>2007</td>
+                <td>PC, Xbox</td>
+            </tr>
+            <tr>
+                <td>Counter-Strike</td>
+                <td>2000</td>
+                <td>PC</td>
+            </tr>
+            <tr>
+                <td>Team Fortress</td>
+                <td>1999</td>
+                <td>PC</td>
+            </tr>
+            <tr>
+                <td>Dota 2</td>
+                <td>2013</td>
+                <td>PC</td>
+            </tr>
+        </table>
 
-    <map name="valvemap">
-        <area shape="rect" coords="10,10,150,150" href="https://store.steampowered.com/app/70/HalfLife/" alt="Half-Life">
-        <area shape="rect" coords="160,10,300,150" href="https://store.steampowered.com/app/400/Portal/" alt="Portal">
-    </map>
-
-    <h2>Відео: Історія Half-Life</h2>
-    <video controls width="500">
-        <source src="media/Half-Life_ Alyx Announcement Trailer.mp4" type="video/mp4">
-        Ваш браузер не підтримує відео.
-    </video>
-    <p>Джерело відео: <a href="https://www.youtube.com/watch?v=O2W0N3uKXmo" target="_blank">YouTube</a></p>
+        <h2>Відео: Історія Half-Life</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/O2W0N3uKXmo" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+    </div>
 </body>
 </html>
